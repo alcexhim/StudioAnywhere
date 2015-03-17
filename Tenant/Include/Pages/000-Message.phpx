@@ -1,0 +1,28 @@
+<Website>
+	<Pages>
+		<Page FileName="message" MasterPageFileName="Blank">
+			<Content xmlns="http://www.w3.org/1999/xhtml" xmlns:wfx="http://www.alceproject.net/xmlns/Phast/WebControls" xmlns:html="http://www.alceproject.net/xmlns/Phast/HTMLControls">
+				<wfx:Section PlaceholderID="Content">
+					<wfx:Panel HorizontalAlignment="Center" Width="500px">
+						<ContentControls>
+							<html:Heading Level="3">
+								<html:Literal ID="lblMessageTitle" Value="An unexpected error has occurred" />
+							</html:Heading>
+							<html:Paragraph>
+								<html:Literal ID="lblMessageContent" Value="You must specify a tenant name" />
+							</html:Paragraph>
+							<hr />
+						</ContentControls>
+						<FooterControls>
+							<html:Anchor CssClass="Button Default">Contact Support</html:Anchor>
+						</FooterControls>
+					</wfx:Panel>
+					
+					<html:Paragraph CssClass="CopyrightNotice">
+						<html:Anchor TargetURL="~/">StudioAnywhere</html:Anchor> &copy; 2015 Mike Becker's Software
+					</html:Paragraph>
+				</wfx:Section>
+			</Content>
+		</Page>
+	</Pages>
+</Website>

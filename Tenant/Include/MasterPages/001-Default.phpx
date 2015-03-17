@@ -1,0 +1,11 @@
+<Website>
+	<MasterPages>
+		<MasterPage FileName="Default" MasterPageFileName="Blank" CodeBehindClassName="StudioAnywhere\Tenant\MasterPages\Default">
+			<Content xmlns="http://www.w3.org/1999/xhtml" xmlns:wfx="http://www.alceproject.net/xmlns/Phast/WebControls" xmlns:html="http://www.alceproject.net/xmlns/Phast/HTMLControls">
+				<div class="Content">
+					<wfx:SectionPlaceholder ID="Content" />
+				</div>
+			</Content>
+		</MasterPage>
+	</MasterPages>
+</Website>
