@@ -1,0 +1,36 @@
+<Website>
+	<Pages>
+		<Page FileName="account/login" MasterPageFileName="Blank" CodeBehindClassName="StudioAnywhere\Tenant\Pages\LoginPage">
+			<Content xmlns="http://www.w3.org/1999/xhtml" xmlns:wfx="http://www.alceproject.net/xmlns/Phast/WebControls" xmlns:html="http://www.alceproject.net/xmlns/Phast/HTMLControls">
+				<wfx:Section PlaceholderID="Content">
+					<wfx:Panel CssClass="LoginPanel" HorizontalAlignment="Center" Width="500px">
+						<ContentControls>
+							<html:Heading Level="3">
+								<html:Literal ID="lblMessageTitle" Value="You must log in to use this feature" />
+							</html:Heading>
+							<html:Paragraph>
+								<wfx:FormView>
+									<Items>
+										<wfx:FormViewItemText Title="User name" />
+										<wfx:FormViewItemPassword Title="Password" />
+									</Items>
+								</wfx:FormView>
+							</html:Paragraph>
+							<hr />
+							<html:Paragraph>
+								Having trouble? Visit <a href="http://support.studioanywhere.net/">StudioAnywhere Support</a> for assistance.
+							</html:Paragraph>
+						</ContentControls>
+						<FooterControls>
+							<html:Anchor CssClass="Button Default">Log In</html:Anchor>
+						</FooterControls>
+					</wfx:Panel>
+					
+					<html:Paragraph CssClass="CopyrightNotice">
+						<html:Anchor TargetURL="~/">StudioAnywhere</html:Anchor> &copy; 2015 Mike Becker's Software
+					</html:Paragraph>
+				</wfx:Section>
+			</Content>
+		</Page>
+	</Pages>
+</Website>
