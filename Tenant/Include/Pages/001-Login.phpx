@@ -5,6 +5,9 @@
 				<wfx:Section PlaceholderID="Content">
 					<wfx:Panel CssClass="LoginPanel" HorizontalAlignment="Center" Width="500px">
 						<ContentControls>
+							<div style="text-align: center;">
+								<html:Image ImageUrl="~/../Images/Logo.svg" Width="100%" />
+							</div>
 							<html:Heading Level="3">
 								<html:Literal ID="lblMessageTitle" Value="You must log in to use this feature" />
 							</html:Heading>
@@ -18,7 +21,11 @@
 							</html:Paragraph>
 							<hr />
 							<html:Paragraph>
-								Having trouble? Visit <a href="http://support.studioanywhere.net/">StudioAnywhere Support</a> for assistance.
+								<!--  This is the default tenant message for StudioAnywhere tenants: -->
+								<!-- Having trouble? Visit <a href="http://support.studioanywhere.net/">StudioAnywhere Support</a> for assistance. -->
+								
+								<!--  This is the message for the StudioAnywhere demo tenant:  -->
+								This is the <a href="http://www.studioanywhere.net">StudioAnywhere</a> demo tenant. The user name is <strong>demo</strong> and the password is <strong>demo</strong>.
 							</html:Paragraph>
 						</ContentControls>
 						<FooterControls>
