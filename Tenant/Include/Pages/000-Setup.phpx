@@ -1,0 +1,26 @@
+<Website>
+	<Pages>
+		<Page EnableTenantedHosting="false" FileName="setup" MasterPageFileName="Blank" CodeBehindClassName="StudioAnywhere\Tenant\Pages\SetupPage">
+			<Content xmlns="http://www.w3.org/1999/xhtml" xmlns:wfx="http://www.alceproject.net/xmlns/Phast/WebControls" xmlns:html="http://www.alceproject.net/xmlns/Phast/HTMLControls">
+				<wfx:Section PlaceholderID="Content">
+					
+					<wfx:Panel HorizontalAlignment="Center" Width="500px">
+						<ContentControls>
+							<div style="text-align: center;">
+								<html:Image ImageUrl="~/../Images/Logo.svg" Width="100%" />
+							</div>
+							<hr />
+							<html:Paragraph>
+								Your system has not been configured yet. Please contact an administrator.
+							</html:Paragraph>
+						</ContentControls>
+					</wfx:Panel>
+					
+					<html:Paragraph CssClass="CopyrightNotice">
+						<html:Anchor TargetURL="~/">StudioAnywhere</html:Anchor> &copy; 2015 Mike Becker's Software
+					</html:Paragraph>
+				</wfx:Section>
+			</Content>
+		</Page>
+	</Pages>
+</Website>
