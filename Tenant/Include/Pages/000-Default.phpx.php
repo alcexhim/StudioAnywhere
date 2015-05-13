@@ -11,11 +11,6 @@
 		{
 			// $this->Page->GetControlByID("lblTenantName")->Value = System::$TenantName;
 			
-			if ($_SESSION["Authentication.SessionID"] == null)
-			{
-				System::Redirect("~/account/login");
-				return;
-			}
 		}
 	}
 ?>
