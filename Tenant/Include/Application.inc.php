@@ -28,6 +28,8 @@
 		return true;
 	}
 	
+	System::$EnableTenantedHosting = true;
+	
 	System::$BeforeLaunchEventHandler = function($path)
 	{
 		if (!IsApplicationInstalled() && !IsPathSetupPage($path))
