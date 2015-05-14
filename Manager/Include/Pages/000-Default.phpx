@@ -1,0 +1,11 @@
+<Website>
+	<Pages>
+		<Page FileName="" MasterPageFileName="Default" CodeBehindClassName="StudioAnywhere\Tenant\Pages\DefaultPage">
+			<Content xmlns="http://www.w3.org/1999/xhtml" xmlns:wfx="http://www.alceproject.net/xmlns/Phast/WebControls" xmlns:html="http://www.alceproject.net/xmlns/Phast/HTMLControls">
+				<wfx:Section PlaceholderID="Content">
+					Current tenant: <html:Literal ID="lblTenantName" />
+				</wfx:Section>
+			</Content>
+		</Page>
+	</Pages>
+</Website>
