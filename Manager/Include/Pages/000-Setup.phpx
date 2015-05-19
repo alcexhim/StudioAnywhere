@@ -1,0 +1,50 @@
+<Website>
+	<Pages>
+		<Page EnableTenantedHosting="false" FileName="setup" MasterPageFileName="Blank" CodeBehindClassName="StudioAnywhere\Tenant\Pages\SetupPage">
+			<Content xmlns="http://www.w3.org/1999/xhtml" xmlns:wfx="http://www.alceproject.net/xmlns/Phast/WebControls" xmlns:html="http://www.alceproject.net/xmlns/Phast/HTMLControls">
+				<wfx:Section PlaceholderID="Content">
+					
+					<wfx:Panel HorizontalAlignment="Center" Width="800px">
+						<ContentControls>
+							<div style="text-align: center;">
+								<html:Image ImageUrl="~/../Images/Logo.svg" Width="40%" />
+							</div>
+							<hr />
+							<div class="ColumnContainer TwoColumn">
+								<div class="Column">
+									<h2>Database Information</h2>
+									<wfx:FormView>
+										<Items>
+											<wfx:FormViewItemText Title="Server name" Value="localhost" />
+											<wfx:FormViewItemText Title="Database name" Value="StudioAnywhere" />
+											<wfx:FormViewItemText Title="Table prefix" Value="sa_" />
+											<wfx:FormViewItemText Title="User name" Value="StudioAnywhere" />
+											<wfx:FormViewItemPassword Title="Password" />
+										</Items>
+									</wfx:FormView>
+								</div>
+								<div class="Column">
+									<h2>Tenant Information</h2>
+									<wfx:FormView>
+										<Items>
+											<wfx:FormViewItemText Title="Tenant name" />
+											<wfx:FormViewItemText Title="Administrator user name" />
+											<wfx:FormViewItemPassword Title="Administrator password" />
+										</Items>
+									</wfx:FormView>
+								</div>
+							</div>
+						</ContentControls>
+						<FooterControls>
+							<input class="Primary" type="submit" value="Continue" />
+						</FooterControls>
+					</wfx:Panel>
+					
+					<html:Paragraph CssClass="CopyrightNotice">
+						<html:Anchor TargetURL="~/">StudioAnywhere</html:Anchor> &copy; 2015 Mike Becker's Software
+					</html:Paragraph>
+				</wfx:Section>
+			</Content>
+		</Page>
+	</Pages>
+</Website>
