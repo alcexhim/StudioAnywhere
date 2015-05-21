@@ -18,13 +18,7 @@
 								</Items>
 							</wfx:FormView>
 							<hr />
-							<html:Paragraph>
-								<!--  This is the default tenant message for StudioAnywhere tenants: -->
-								<!-- Having trouble? Visit <a href="http://support.studioanywhere.net/">StudioAnywhere Support</a> for assistance. -->
-								
-								<!--  This is the message for the StudioAnywhere demo tenant:  -->
-								This is the <a href="http://www.studioanywhere.net">StudioAnywhere</a> demo tenant. The user name is <strong>demo</strong> and the password is <strong>demo</strong>.
-							</html:Paragraph>
+							<html:Paragraph ID="paraCopyright" />
 						</ContentControls>
 						<FooterControls>
 							<html:Anchor CssClass="Button Default">Log In</html:Anchor>
