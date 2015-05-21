@@ -1,7 +1,6 @@
 <?php
 	use Phast\System;
 	use Phast\Data\DataSystem;
-	use PDO;
 	
 	function IsPathLoginExempt($path)
 	{
@@ -17,15 +16,19 @@
 	}
 	function IsApplicationInstalled()
 	{
-		$pdo = DataSystem::GetPDO();
+		$pdo = null;
+		try
+		{
+			$pdo = DataSystem::GetPDO();
+		}
+		catch (Exception $ex)
+		{
+			return false;
+		}
 		$statement = $pdo->prepare("DESC sa_Users");
 		
-		$statement->execute();
-		
-		$errorCode = $statement->errorCode();
-		
-		if ($errorCode != 0) return false;
-		return true;
+		if ($statement->execute() === true) return true;
+		return false;
 	}
 	
 	System::$EnableTenantedHosting = false;
