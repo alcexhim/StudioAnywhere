@@ -22,9 +22,15 @@
 				);
 				
 				if ($this->WriteConfigurationFile($values) && $this->WriteDatabase())
-				{ 
+				{
 					System::Redirect("~/");
+					$e->Cancel = true;
 				}
+			}
+			else if (IsApplicationInstalled())
+			{
+				System::Redirect("~/");
+				$e->Cancel = true;
 			}
 		}
 		
