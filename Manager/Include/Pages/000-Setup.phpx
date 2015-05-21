@@ -3,43 +3,43 @@
 		<Page EnableTenantedHosting="false" FileName="setup" MasterPageFileName="Blank" CodeBehindClassName="StudioAnywhere\Tenant\Pages\SetupPage" Title="StudioAnywhere Setup">
 			<Content xmlns="http://www.w3.org/1999/xhtml" xmlns:wfx="http://www.alceproject.net/xmlns/Phast/WebControls" xmlns:html="http://www.alceproject.net/xmlns/Phast/HTMLControls">
 				<wfx:Section PlaceholderID="Content">
-					
-					<wfx:Panel HorizontalAlignment="Center" Width="800px">
-						<ContentControls>
-							<div style="text-align: center;">
-								<html:Image AlternateText="StudioAnywhere" ImageUrl="~/../Images/Logo.svg" Width="40%" />
-							</div>
-							<hr />
-							<div class="ColumnContainer TwoColumn">
-								<div class="Column">
-									<h2>Database Information</h2>
-									<wfx:FormView>
-										<Items>
-											<wfx:FormViewItemText ID="txtServerName" Name="database_ServerName" Title="Server name" Value="localhost" />
-											<wfx:FormViewItemText ID="txtDatabaseName" Name="database_DatabaseName" Title="Database name" Value="StudioAnywhere" />
-											<wfx:FormViewItemText ID="txtTablePrefix" Name="database_TablePrefix" Title="Table prefix" Value="sa_" />
-											<wfx:FormViewItemText ID="txtDatabaseUserName" Name="database_UserName" Title="User name" Value="StudioAnywhere" />
-											<wfx:FormViewItemPassword ID="txtDatabasePassword" Name="database_Password" Title="Password" />
-										</Items>
-									</wfx:FormView>
+					<html:Form Method="Post" Action="~/setup"> 
+						<wfx:Panel HorizontalAlignment="Center" Width="800px">
+							<ContentControls>
+								<div style="text-align: center;">
+									<html:Image AlternateText="StudioAnywhere" ImageUrl="~/../Images/Logo.svg" Width="40%" />
 								</div>
-								<div class="Column">
-									<h2>Tenant Information</h2>
-									<wfx:FormView>
-										<Items>
-											<wfx:FormViewItemText ID="txtTenantName" Name="tenant_Name" Title="Tenant name" />
-											<wfx:FormViewItemText ID="txtTenantUserName" Name="tenant_UserName" Title="Administrator user name" />
-											<wfx:FormViewItemPassword ID="txtTenantPassword" Name="tenant_Password" Title="Administrator password" />
-										</Items>
-									</wfx:FormView>
+								<hr />
+								<div class="ColumnContainer TwoColumn">
+									<div class="Column">
+										<h2>Database Information</h2>
+										<wfx:FormView>
+											<Items>
+												<wfx:FormViewItemText ID="txtServerName" Name="database_ServerName" Title="Server name" Value="localhost" />
+												<wfx:FormViewItemText ID="txtDatabaseName" Name="database_DatabaseName" Title="Database name" Value="StudioAnywhere" />
+												<wfx:FormViewItemText ID="txtTablePrefix" Name="database_TablePrefix" Title="Table prefix" Value="sa_" />
+												<wfx:FormViewItemText ID="txtDatabaseUserName" Name="database_UserName" Title="User name" Value="StudioAnywhere" />
+												<wfx:FormViewItemPassword ID="txtDatabasePassword" Name="database_Password" Title="Password" />
+											</Items>
+										</wfx:FormView>
+									</div>
+									<div class="Column">
+										<h2>Tenant Information</h2>
+										<wfx:FormView>
+											<Items>
+												<wfx:FormViewItemText ID="txtTenantName" Name="tenant_Name" Title="Tenant name" />
+												<wfx:FormViewItemText ID="txtTenantUserName" Name="tenant_UserName" Title="Administrator user name" />
+												<wfx:FormViewItemPassword ID="txtTenantPassword" Name="tenant_Password" Title="Administrator password" />
+											</Items>
+										</wfx:FormView>
+									</div>
 								</div>
-							</div>
-						</ContentControls>
-						<FooterControls>
-							<input class="Primary" type="submit" value="Continue" />
-						</FooterControls>
-					</wfx:Panel>
-					
+							</ContentControls>
+							<FooterControls>
+								<html:Input CssClass="Primary" Type="Submit" Value="Continue" />
+							</FooterControls>
+						</wfx:Panel>
+					</html:Form>
 					<html:Paragraph CssClass="CopyrightNotice">
 						<html:Anchor TargetURL="~/">StudioAnywhere</html:Anchor> &copy; 2015 Mike Becker's Software
 					</html:Paragraph>
