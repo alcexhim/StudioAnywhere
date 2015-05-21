@@ -19,8 +19,6 @@
 	
 	// We need to get the root path of the Web site. It's usually something like
 	// /var/www/yourdomain.com.
-	global $RootPath;
-	$RootPath = dirname(__FILE__);
 	
 	// Now that we have defined the root path, load the Phast content (which also
 	// include_once's the modules and other Phast-specific stuff)
@@ -31,6 +29,9 @@
 	// to them (in this file only) as "System" and "IncludeFile", respectively, from
 	// now on
 	use Phast\System;
+	
+	// Set the application path
+	System::SetApplicationPath(dirname(__FILE__));
 	
 	// Tell WebFX that we are ready to launch the application. This cycles through
 	// all of the modules (usually you will define your main application content in
