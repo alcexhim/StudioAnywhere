@@ -8,6 +8,6 @@
 		new Column("UserName", "VARCHAR", 50),
 		new Column("DisplayName", "VARCHAR", 50),
 		new Column("PasswordHash", "VARCHAR", 256),
-		new Column("PasswordSalt", "VARCHAR", 16)
+		new Column("PasswordSalt", "VARCHAR", 32)
 	));
 ?>
