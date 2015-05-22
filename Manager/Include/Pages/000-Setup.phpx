@@ -24,12 +24,11 @@
 										</wfx:FormView>
 									</div>
 									<div class="Column">
-										<h2>Tenant Information</h2>
+										<h2>Administration Information</h2>
 										<wfx:FormView>
 											<Items>
-												<wfx:FormViewItemText ID="txtTenantName" Name="tenant_Name" Title="Tenant name" />
-												<wfx:FormViewItemText ID="txtTenantUserName" Name="tenant_UserName" Title="Administrator user name" />
-												<wfx:FormViewItemPassword ID="txtTenantPassword" Name="tenant_Password" Title="Administrator password" />
+												<wfx:FormViewItemText ID="txtAdminUserName" Name="admin_UserName" Title="Administrator user name" />
+												<wfx:FormViewItemPassword ID="txtAdminPassword" Name="admin_Password" Title="Administrator password" />
 											</Items>
 										</wfx:FormView>
 									</div>
