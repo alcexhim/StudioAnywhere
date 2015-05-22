@@ -1,6 +1,6 @@
 <Website>
 	<MasterPages>
-		<MasterPage FileName="Blank" CodeBehindClassName="StudioAnywhere\Tenant\MasterPages\Blank">
+		<MasterPage FileName="Blank" CodeBehindClassName="StudioAnywhere\Manager\MasterPages\BlankPage">
 			<References>
 				<Reference TagPrefix="wfx" NamespacePath="Phast\WebControls" />
 				<Reference TagPrefix="html" NamespacePath="Phast\HTMLControls" />
