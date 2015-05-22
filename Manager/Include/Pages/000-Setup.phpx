@@ -35,7 +35,7 @@
 								</div>
 							</ContentControls>
 							<FooterControls>
-								<html:Input CssClass="Primary" Type="Submit" Value="Continue" />
+								<html:Input CssClass="Primary" Type="Submit" Value="Continue" OnClientClick="this.setAttribute('disabled', 'disabled');" />
 							</FooterControls>
 						</wfx:Panel>
 					</html:Form>
